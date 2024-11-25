@@ -1,0 +1,123 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic layout and body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Center the form and card container */
+.weather-form,
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Styling the form */
+.weather-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cityInput {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.cityInput:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Card Display Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+}
+
+.cityDisplay {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tempDisplay {
+    font-size: 40px;
+    font-weight: 300;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.humidityDisplay,
+.descDisplay {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.weatherEmoji {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+/* Error Message Styles */
+.errorDisplay {
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffdddd;
+    border: 1px solid #ff0000;
+    display: none; /* Hidden by default */
+}
+
+/* Show error message when needed */
+.errorDisplay.show {
+    display: block;
+}
+
