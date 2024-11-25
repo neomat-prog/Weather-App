@@ -1,5 +1,5 @@
 
-Weather App
+## Weather App
 
 A simple weather application that fetches real-time weather data from the OpenWeatherMap API. Users can enter the name of a city to get current weather details such as temperature, humidity, and weather conditions.
 
